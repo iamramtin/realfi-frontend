@@ -61,7 +61,6 @@ export default function Dashboard() {
   }));
   
   return (
-    <DataLoader loading={!users.length}>
       <div className="p-4">
         <h1 className="text-3xl font-bold mb-4">
           {Array.from('User Overview').map((letter, i) => (
@@ -113,6 +112,5 @@ export default function Dashboard() {
           />
         </div>
       </div>
-    </DataLoader>
   );
 }

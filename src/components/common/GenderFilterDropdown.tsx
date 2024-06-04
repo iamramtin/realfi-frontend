@@ -18,6 +18,7 @@ const GenderFilterDropdown: React.FC<GenderFilterDropdownProps> = ({ value, onCh
         value={value || ''}
         onChange={handleGenderChange}
         className="p-2 border border-gray-300 rounded-md"
+        data-testid="select-option"
       >
         <option value="">All</option>
         <option value="Male">Male</option>

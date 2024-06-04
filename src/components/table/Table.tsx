@@ -32,10 +32,7 @@ export default function Table() {
       <div className="p-4 bg-white shadow rounded-lg">
         <div className="flex justify-between mb-4">
           <h2 className="text-2xl font-bold">Table</h2>
-          <button 
-            onClick={toggleTable} 
-            className="mb-4 md:block hidden"
-          >
+          <button onClick={toggleTable} className="mb-4 md:block hidden">
             {showFullTable ? 'Show Simple Table' : 'Show Full Table'}
           </button>
         </div>
