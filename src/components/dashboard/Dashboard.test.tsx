@@ -66,12 +66,15 @@ describe('Dashboard', () => {
     // Filter data by gender
     const genderDropdown = screen.getByTestId('select-option');
     expect(genderDropdown).toBeInTheDocument();
-    userEvent.click(genderDropdown);
+    await userEvent.click(genderDropdown);
 
     // Select gender filter and check if data is filtered
     fireEvent.change(genderDropdown, { target: { value: 'Female' } });
     await waitFor(() => {
       expect(screen.queryByText('John')).not.toBeInTheDocument();
+    });
+    
+    await waitFor(() => {
       expect(screen.getByText('Jane')).toBeInTheDocument();
     });
   });
