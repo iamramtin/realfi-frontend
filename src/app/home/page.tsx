@@ -26,9 +26,7 @@ export default function HomePage() {
           Dashboard
         </button>
       </div>
-      <div>
-        {activeTab === 'table' ? <Table /> : <Dashboard />}
-      </div>
+      {activeTab === 'table' ? <Table /> : <Dashboard />}
     </div>
   )
 }

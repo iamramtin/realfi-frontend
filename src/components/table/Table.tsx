@@ -29,7 +29,7 @@ export default function Table() {
 
   return (
     <DataLoader loading={!users}>
-      <div className="p-4 bg-white shadow rounded-lg">
+      <div className="p-8 bg-white shadow rounded-lg">
         <div className="flex justify-between mb-4">
           <h2 className="text-2xl font-bold">Table</h2>
           <button onClick={toggleTable} className="mb-4 md:block hidden">
