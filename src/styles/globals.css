@@ -1,0 +1,157 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the website */
+html,
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+a {
+  @apply text-teal-600 hover:text-teal-800;
+  line-height: 2.25rem;
+}
+
+p {
+  @apply mb-4 leading-relaxed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-gray-900 font-bold;
+}
+
+p, a {
+  font-size: 13px;
+}
+
+button {
+  @apply bg-teal-600 text-white py-2 px-4 rounded hover:bg-teal-700;
+}
+
+header, footer {
+  @apply bg-yellow-100;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-ThinItalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-ExtraBoldItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/BwGradual-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+  font-family: 'BwGradual', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+}
